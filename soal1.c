@@ -40,13 +40,11 @@ int main(){
         }
     }
 
-    printf("COUNT %d\n", count);
+    printf("COUNT %d ", count);
     printf("SORTED ");
     for(int i = 0; i<count;i++){
         printf("%d ", ARR[i]);
-        if(i == count -1){
-            printf("\n");
-        }
+        
     }
 
     int idxmed;
@@ -59,7 +57,7 @@ int main(){
         idxmed = count/2;
         median = (float)ARR[idxmed];
     }
-    printf("MEDIAN %.02f\n", median);
+    printf("MEDIAN %.02f", median);
 
 
 }
