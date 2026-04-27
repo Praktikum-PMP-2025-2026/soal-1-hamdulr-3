@@ -57,7 +57,13 @@ int main(){
         idxmed = count/2;
         median = (float)ARR[idxmed];
     }
-    printf("MEDIAN %.02f", median);
+    if((float)((int)median - median) != 0){
+        printf("MEDIAN %.02f", median);
+
+    }
+    else{
+        printf("MEDIAN %d", (int)median);
+    }
 
 
 }
